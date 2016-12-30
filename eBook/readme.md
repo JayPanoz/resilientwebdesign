@@ -39,7 +39,9 @@ However… what you should pay attention to:
 - figures: the biggest images should be used for best quality (print), captions have to be styled using a dedicated paragraph style;
 - “Heading 1” is actually “Heading0”, “Heading 2” is “Heading1”, etc. (styles can be renamed though);
 - “NumList > first” and “BulList > first” are normal, they allow for reset (or else list num starts where the previous list finished;
-- you can get rid of “Default” character style and replace it with “None”.
+- you can get rid of “Default” character style and replace it with “None”;
+- toc should be removed and reimplemented using InDesign’s toc feature;
+- index should be removed and reimplemented using InDesign’s index feature.
 
 Code, lists, blockquote, etc. are OK. It’s just about modifying the paragraph and character styles.
 
@@ -47,7 +49,7 @@ The ET Book typeface with ligatures can be [downloaded in OTF format](https://gi
 
 ### Conversion
 
-Should you want to alter the EPUB file so that small-caps are exported, here is how you convert the EPUB file to InCopy using [Pandoc](http://pandoc.org).
+Should you want to alter the EPUB file so that small-caps are exported or to remove hyperlinks, here is how you convert the EPUB file to InCopy using [Pandoc](http://pandoc.org).
 
 ```
 pandoc -s -f epub -t icml -o [path/to/ResilientWebDesign.icml] [path/to/ResilientWebDesign.epub]
